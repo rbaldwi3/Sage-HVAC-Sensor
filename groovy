@@ -49,6 +49,13 @@ metadata {
         command "enrollResponse"
  	   
         fingerprint endpointId: "12", inClusters: "0000,0003,0009,0001", outClusters: "0003,0006,0008,0019", model: "Bell", manufacturer: "Echostar"
+        // 0000 = Basic - pg 3-5 - Attributes for determining basic information about a device, setting user device information such as description of location, and enabling a device
+        // 0001 = Power Configuration - pg 3-13 - Attributes for determining more detailed information about a device’s power source(s), and for configuring under/over voltage alarms.
+        // 0003 = Identify - pg 3-26 - Attributes and commands for putting a device into Identification mode (e.g., flashing a light) 
+        // 0006 = On/Off - pg 3-51 - Attributes and commands for switching devices between ‘On’ and ‘Off’ states
+        // 0008 = Level Control - pg 3-60 - Attributes and commands for controlling a characteristic of devices that can be set to a level between fully ‘On’ and fully ‘Off’. 
+        // 0009 = Alarms - pg 3-67 - Attributes and commands for sending alarm notifications and configuring alarm functionality
+        // 0019 = 
     }
       
     preferences {
